@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./index2.css">
+    <title>Encriptador de texto</title>
+    <link rel="shortcut icon" href="./imagenes/Logo-Skynets-icon.png">
+</head>
+<body>
+    <header><img src="./imagenes/Frame 6.png" alt="Imagen Alura"></header>
+    <main>
+        <div class="contenedor">
+            <div class="proceso">
+                <div class="texto">
+                    <!-- <input type="text" value="Ingrese su texto aquí"> -->
+                    <textarea name="mensaje" id="mensaje-1" placeholder="Ingrese el texto aquí" cols="28" rows="19"></textarea>
+                </div>
+                <div class="enviar">
+                    <img src="./imagenes/Frame 1.png" alt="">
+                    <div class="botones">
+                        <button class="b1" id="encriptar">Encriptar</button>
+                        <button class="b2" id="desencriptar">Desencriptar</button>
+                    </div>
+                </div>
+            </div>
+            <div class="resultado">
+                <img src="./imagenes/Muñeco.png" alt="Muñeco ningun mensaje" id="imagen-sin-mensaje">
+                <h3 id="ningun-mensaje">Ningun mensaje fue encontrado</h3>
+                <p id="ningun-texto">Ingresa el texto que desees encriptar o desencriptar</p>
+            </div>
+        </div>
+    </main>
+    <footer><p>Desarrollado por Sebastian Montes de Oca -Skynets-</p></footer>
+    <script src="./app.js"></script>
+</body>
+</html>
