@@ -8,6 +8,7 @@ function encriptar(){
     if (h2Exists) {
         const $mensajeResultado = document.getElementById("mensaje-modificado");
         $mensajeResultado.remove();
+        document.getElementById("copiar").remove();
     }
     if(textoModificado===""){
         $resultado.appendChild($imagen);
@@ -21,6 +22,13 @@ function encriptar(){
         $mensajeModificado.setAttribute("id", "mensaje-modificado");
         $mensajeModificado.textContent = textoModificado;
         $resultado.appendChild($mensajeModificado);
+        const $botonCopiar = document.createElement("button");
+        $botonCopiar.setAttribute("id", "copiar")
+        $botonCopiar.textContent = "Copiar";
+        $resultado.appendChild($botonCopiar);
+        document.querySelector("#copiar").addEventListener("click", () => {
+            navigator.clipboard.writeText(textoModificado);
+        })
     }
 };
 
@@ -32,6 +40,7 @@ function desEncriptar(){
     if (h2Exists) {
         const $mensajeResultado = document.getElementById("mensaje-modificado");
         $mensajeResultado.remove();
+        document.getElementById("copiar").remove();
     }
     if(textoModificado===""){
         $resultado.appendChild($imagen);
@@ -45,6 +54,13 @@ function desEncriptar(){
         $mensajeModificado.setAttribute("id", "mensaje-modificado");
         $mensajeModificado.textContent = textoModificado;
         $resultado.appendChild($mensajeModificado);
+        const $botonCopiar = document.createElement("button");
+        $botonCopiar.setAttribute("id", "copiar")
+        $botonCopiar.textContent = "Copiar";
+        $resultado.appendChild($botonCopiar);
+        document.querySelector("#copiar").addEventListener("click", () => {
+            navigator.clipboard.writeText(textoModificado);
+        })
     }
 }
 

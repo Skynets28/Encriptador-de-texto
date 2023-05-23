@@ -40,6 +40,7 @@ textarea{
     outline: none;
     border-radius: 15px;
     height: 550px;
+    width: 628px;
 }
 .resultado{
     display: flex;
@@ -75,6 +76,14 @@ button{
     background: transparent;
     color: #0A3871;
     border-color: #0A3871;
+}
+
+#copiar{
+    margin-top: 10px;
+    background-color: #0A3871;
+    color: white;
+    border-color: #0A3871;
+    height: 50px;
 }
 
 footer{
